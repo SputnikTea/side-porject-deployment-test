@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "side-porject-deployment-test": {
+      "appLocation": "src",
+      "outputLocation": ".",
+      "appName": "side-porject-deployment-test",
+      "resourceGroup": "side-porject-deployment-test-rg"
+    }
+  }
+}

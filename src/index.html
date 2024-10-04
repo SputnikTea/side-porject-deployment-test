@@ -6,11 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Vanilla JavaScript App</title>
+
+  <script>
+    function getHeaders() {
+      fetch('https://httpbin.org/headers')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('headers').innerText = JSON.stringify(data, null, 2);
+              });
+    }
+  </script>
 </head>
 
 <body>
   <main>
     <h1>Vanilla JavaScript App</h1>
+    <button onclick="getHeaders()">Get Headers</button>
+    <pre id="headers"></pre>
   </main>
 </body>
 
